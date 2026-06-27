@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nachhaltigkeits-Verzeichnis</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 30px; background: #fafbfc; color: #2d3748; max-width: 1200px; margin: 0 auto; }
+        h2 { color: #1a202c; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+        
+        .filter-section { background: white; padding: 20px; border-radius: 10px; margin-bottom: 25px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+        .filter-section h3 { margin-top: 0; font-size: 1.1rem; color: #4a5568; }
+        .filter-buttons { display: block; }
+        
+        /* Buttons */
+        button { padding: 8px 14px; margin: 5px; border: 1px solid #cbd5e0; background: #fff; color: #4a5568; border-radius: 6px; cursor: pointer; font-weight: 500; transition: all 0.2s ease; }
+        button:hover:not(:disabled) { border-color: #a0aec0; background: #edf2f7; }
+        button.active { background: #319795; color: white; border-color: #2c7a7b; }
+        button:disabled { background: #edf2f7; color: #a0aec0; border-color: #e2e8f0; cursor: not-allowed; opacity: 0.5; }
+        
+        .results { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+        .results-header { display: block; border-bottom: 1px solid #e2e8f0; padding-bottom: 10px; margin-bottom: 15px; font-weight: bold; }
+        
+        /* Firmen Einträge */
+        .item { padding: 15px; border-bottom: 1px solid #edf2f7; transition: background 0.2s; }
+        .item:last-child { border-bottom: none; }
+        .item:hover { background: #f7fafc; }
+        .item-title { font-size: 1.2rem; color: #2b6cb0; text-decoration: none; font-weight: bold; }
+        .item-title:hover { text-decoration: underline; }
+        .item-desc { margin: 8px 0; color: #4a5568; font-size: 0.95rem; }
+        .item-tags { display: block; margin-top: 5px; }
+        .tag { display: inline-block; background: #e2e8f0; color: #4a5568; font-size: 0.75rem; padding: 2px 8px; border-radius: 9999px; margin-right: 5px; }
+    </style>
+</head>
+<body>
+
+    <h2>Kategorie-Finder</h2>
+
+    <div class="filter-section">
+        <h3>Nach Kategorien filtern (Mehrfachauswahl möglich):</h3>
+        <div class="filter-buttons" id="filter-container"></div>
+    </div>
+
+    <div class="results">
+        <div class="results-header">Ergebnisse: <span id="count">0</span> Einträge gefunden</div>
+        <div id="result-list"></div>
+    </div>
+
+    <script>
+        let database = [];
+        let activeCategories = []; // Enthält die aktuell gewählten Filter-Kategorien
+
+        // 1. JSON-Daten laden
+        fetch('linkliste.json')
+            .then(response => response.json())
+            .then(data => {
+                database = data;
+                initFinder();
+            })
+            .catch(err => {
+                console.error("Fehler beim Laden der JSON-Daten:", err);
+                document.getElementById('result-list').innerHTML = "<p style='color:red;'>Die 'linkliste.json' konnte nicht geladen werden. Nutze einen lokalen Webserver!</p>";
+            });
+
+        // 2. Alle einzigartigen Kategorien aus den Daten sammeln
+        function getAllCategories() {
+            let kats = new Set();
+            database.forEach(item => {
+                item.kategorien.forEach(k => kats.add(k));
+            });
+            return Array.from(kats).sort();
+        }
+
+        // 3. UI initialisieren
+        function initFinder() {
+            updateUI();
+        }
+
+        // 4. Die Haupt-Update-Funktion
+        function updateUI() {
+            const categories = getAllCategories();
+            const filterContainer = document.getElementById('filter-container');
+            filterContainer.innerHTML = '';
+
+            // Filter-Buttons zeichnen und Logik prüfen
+            categories.forEach(kat => {
+                const btn = document.createElement('button');
+                btn.innerText = kat;
+
+                const istAktiv = activeCategories.includes(kat);
+                if (istAktiv) btn.className = 'active';
+
+                // Logik zum Ausgrauen:
+                // Wenn wir diese Kategorie hinzufügen (oder entfernen), gäbe es dann Ergebnisse?
+                let hypothetischeAuswahl = [...activeCategories];
+                if (istAktiv) {
+                    hypothetischeAuswahl = hypothetischeAuswahl.filter(k => k !== kat);
+                } else {
+                    hypothetischeAuswahl.push(kat);
+                }
+
+                // Prüfen, ob mindestens eine Firma ALLE Kriterien der hypothetischen Auswahl erfüllt
+                const hatErgebnisse = database.some(item => {
+                    return hypothetischeAuswahl.every(k => item.kategorien.includes(k));
+                });
+
+                // Wenn es keine Ergebnisse gäbe und der Button nicht eh schon aktiv ist -> Ausgrauen!
+                if (!hatErgebnisse && !istAktiv) {
+                    btn.disabled = true;
+                }
+
+                // Klick-Event
+                btn.onclick = () => {
+                    if (istAktiv) {
+                        activeCategories = activeCategories.filter(k => k !== kat);
+                    } else {
+                        activeCategories.push(kat);
+                    }
+                    updateUI(); // Alles neu berechnen
+                };
+
+                filterContainer.appendChild(btn);
+            });
+
+            // Ergebnisse filtern und anzeigen
+            renderResults();
+        }
+
+        // 5. Ergebnisse im HTML ausgeben
+        function renderResults() {
+            const resultList = document.getElementById('result-list');
+            const countSpan = document.getElementById('count');
+
+            // Filtern: Behalte nur Firmen, die ALLE aktiven Kategorien besitzen
+            const gefiltert = database.filter(item => {
+                return activeCategories.every(k => item.kategorien.includes(k));
+            });
+
+            resultList.innerHTML = '';
+            
+            if (gefiltert.length === 0) {
+                resultList.innerHTML = "<p>Keine Einträge für diese Kombination gefunden.</p>";
+            } else {
+                gefiltert.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = 'item';
+                    
+                    // Tags für die Anzeige generieren
+                    const tagsHtml = item.kategorien.map(k => `<span class='tag'>${k}</span>`).join('');
+                    
+                    div.innerHTML = `
+                        <a class="item-title" href="${item.link}" target="_blank">${item.titel}</a>
+                        <div class="item-desc">${item.beschreibung}</div>
+                        <div class="item-tags">${tagsHtml}</div>
+                    `;
+                    resultList.appendChild(div);
+                });
+            }
+
+            countSpan.innerText = gefiltert.length;
+        }
+    </script>
+</body>
+</html>
