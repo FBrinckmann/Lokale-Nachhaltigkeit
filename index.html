@@ -10,7 +10,6 @@
         
         .filter-section { background: white; padding: 20px; border-radius: 10px; margin-bottom: 25px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
         .filter-section h3 { margin-top: 0; font-size: 1.1rem; color: #4a5568; }
-        .filter-buttons { display: block; }
         
         /* Buttons */
         button { padding: 8px 14px; margin: 5px; border: 1px solid #cbd5e0; background: #fff; color: #4a5568; border-radius: 6px; cursor: pointer; font-weight: 500; transition: all 0.2s ease; }
@@ -30,6 +29,8 @@
         .item-desc { margin: 8px 0; color: #4a5568; font-size: 0.95rem; }
         .item-tags { display: block; margin-top: 5px; }
         .tag { display: inline-block; background: #e2e8f0; color: #4a5568; font-size: 0.75rem; padding: 2px 8px; border-radius: 9999px; margin-right: 5px; }
+        
+        .error-message { color: #e53e3e; background: #fff5f5; padding: 15px; border-radius: 6px; border: 1px solid #fed7d7; }
     </style>
 </head>
 <body>
@@ -38,7 +39,7 @@
 
     <div class="filter-section">
         <h3>Nach Kategorien filtern (Mehrfachauswahl möglich):</h3>
-        <div class="filter-buttons" id="filter-container"></div>
+        <div class="filter-buttons" id="filter-container">Bitte warten, Daten werden geladen...</div>
     </div>
 
     <div class="results">
@@ -47,22 +48,51 @@
     </div>
 
     <script>
-        let database = [];
-        let activeCategories = []; // Enthält die aktuell gewählten Filter-Kategorien
+        // ==========================================
+        // CONFIGURATION: Hier den Dateinamen ändern!
+        // ==========================================
+        const DATEN_DATEI_NAME = "linkliste.js"; 
+        // ==========================================
 
-        // 1. JSON-Daten laden
-        fetch('linkliste.json')
-            .then(response => response.json())
+        let database = [];
+        let activeCategories = []; // Hält die aktuell gewählten Filter-Kategorien
+
+        // Funktion, um die JavaScript-Daten-Datei dynamisch in die Seite zu laden
+        function loadDataScript(url) {
+            return new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.src = url;
+                script.onload = () => {
+                    // Prüfen, ob die Variable 'firmaData' aus der js-Datei existiert
+                    if (typeof firmaData !== 'undefined') {
+                        resolve(firmaData);
+                    } else {
+                        reject(new Error("Die Variable 'firmaData' wurde in der Datei nicht gefunden."));
+                    }
+                };
+                script.onerror = () => reject(new Error(`Die Datei '${url}' konnte nicht geladen werden.`));
+                document.head.appendChild(script);
+            });
+        }
+
+        // Startpunkt nach dem Laden der Seite
+        loadDataScript(DATEN_DATEI_NAME)
             .then(data => {
                 database = data;
                 initFinder();
             })
             .catch(err => {
-                console.error("Fehler beim Laden der JSON-Daten:", err);
-                document.getElementById('result-list').innerHTML = "<p style='color:red;'>Die 'linkliste.json' konnte nicht geladen werden. Nutze einen lokalen Webserver!</p>";
+                console.error(err);
+                document.getElementById('filter-container').innerHTML = "-";
+                document.getElementById('result-list').innerHTML = `
+                    <div class="error-message">
+                        <strong>Fehler beim Laden der Daten:</strong><br>
+                        ${err.message}<br><br>
+                        <em>Hinweis: Stelle sicher, dass das Python-Skript erfolgreich gelaufen ist und die Datei '${DATEN_DATEI_NAME}' im selben Ordner liegt wie diese HTML-Datei.</em>
+                    </div>`;
             });
 
-        // 2. Alle einzigartigen Kategorien aus den Daten sammeln
+        // Alle einzigartigen Kategorien aus den Daten sammeln
         function getAllCategories() {
             let kats = new Set();
             database.forEach(item => {
@@ -71,16 +101,21 @@
             return Array.from(kats).sort();
         }
 
-        // 3. UI initialisieren
+        // Finder initialisieren
         function initFinder() {
             updateUI();
         }
 
-        // 4. Die Haupt-Update-Funktion
+        // Die Haupt-Update-Funktion für die Buttons
         function updateUI() {
             const categories = getAllCategories();
             const filterContainer = document.getElementById('filter-container');
             filterContainer.innerHTML = '';
+
+            if(categories.length === 0) {
+                filterContainer.innerHTML = "Keine Kategorien in den Daten gefunden.";
+                return;
+            }
 
             // Filter-Buttons zeichnen und Logik prüfen
             categories.forEach(kat => {
@@ -90,8 +125,7 @@
                 const istAktiv = activeCategories.includes(kat);
                 if (istAktiv) btn.className = 'active';
 
-                // Logik zum Ausgrauen:
-                // Wenn wir diese Kategorie hinzufügen (oder entfernen), gäbe es dann Ergebnisse?
+                // Logik zum Ausgrauen (Vorausschauende Prüfung)
                 let hypothetischeAuswahl = [...activeCategories];
                 if (istAktiv) {
                     hypothetischeAuswahl = hypothetischeAuswahl.filter(k => k !== kat);
@@ -104,7 +138,7 @@
                     return hypothetischeAuswahl.every(k => item.kategorien.includes(k));
                 });
 
-                // Wenn es keine Ergebnisse gäbe und der Button nicht eh schon aktiv ist -> Ausgrauen!
+                // Wenn es keine Ergebnisse gäbe und der Button nicht eh schon aktiv ist -> Ausgrauen
                 if (!hatErgebnisse && !istAktiv) {
                     btn.disabled = true;
                 }
@@ -126,7 +160,7 @@
             renderResults();
         }
 
-        // 5. Ergebnisse im HTML ausgeben
+        // Ergebnisse im HTML ausgeben
         function renderResults() {
             const resultList = document.getElementById('result-list');
             const countSpan = document.getElementById('count');
