@@ -20,7 +20,7 @@
         .results { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
         .results-header { display: block; border-bottom: 1px solid #e2e8f0; padding-bottom: 10px; margin-bottom: 15px; font-weight: bold; }
         
-        /* Firmen Eintr‰ge */
+        /* Firmen Eintr√§ge */
         .item { padding: 15px; border-bottom: 1px solid #edf2f7; transition: background 0.2s; }
         .item:last-child { border-bottom: none; }
         .item:hover { background: #f7fafc; }
@@ -38,24 +38,24 @@
     <h2>Kategorie-Finder</h2>
 
     <div class="filter-section">
-        <h3>Nach Kategorien filtern (Mehrfachauswahl mˆglich):</h3>
+        <h3>Nach Kategorien filtern (Mehrfachauswahl m√∂glich):</h3>
         <div class="filter-buttons" id="filter-container">Bitte warten, Daten werden geladen...</div>
     </div>
 
     <div class="results">
-        <div class="results-header">Ergebnisse: <span id="count">0</span> Eintr‰ge gefunden</div>
+        <div class="results-header">Ergebnisse: <span id="count">0</span> Eintr√§ge gefunden</div>
         <div id="result-list"></div>
     </div>
 
     <script>
         // ==========================================
-        // CONFIGURATION: Hier den Dateinamen ‰ndern!
+        // CONFIGURATION: Hier den Dateinamen √§ndern!
         // ==========================================
         const DATEN_DATEI_NAME = "linkliste.js"; 
         // ==========================================
 
         let database = [];
-        let activeCategories = []; // H‰lt die aktuell gew‰hlten Filter-Kategorien
+        let activeCategories = []; // H√§lt die aktuell gew√§hlten Filter-Kategorien
 
         // Funktion, um die JavaScript-Daten-Datei dynamisch in die Seite zu laden
         function loadDataScript(url) {
@@ -63,7 +63,7 @@
                 const script = document.createElement('script');
                 script.src = url;
                 script.onload = () => {
-                    // Pr¸fen, ob die Variable 'firmaData' aus der js-Datei existiert
+                    // Pr√ºfen, ob die Variable 'firmaData' aus der js-Datei existiert
                     if (typeof firmaData !== 'undefined') {
                         resolve(firmaData);
                     } else {
@@ -106,7 +106,7 @@
             updateUI();
         }
 
-        // Die Haupt-Update-Funktion f¸r die Buttons
+        // Die Haupt-Update-Funktion f√ºr die Buttons
         function updateUI() {
             const categories = getAllCategories();
             const filterContainer = document.getElementById('filter-container');
@@ -117,7 +117,7 @@
                 return;
             }
 
-            // Filter-Buttons zeichnen und Logik pr¸fen
+            // Filter-Buttons zeichnen und Logik pr√ºfen
             categories.forEach(kat => {
                 const btn = document.createElement('button');
                 btn.innerText = kat;
@@ -125,7 +125,7 @@
                 const istAktiv = activeCategories.includes(kat);
                 if (istAktiv) btn.className = 'active';
 
-                // Logik zum Ausgrauen (Vorausschauende Pr¸fung)
+                // Logik zum Ausgrauen (Vorausschauende Pr√ºfung)
                 let hypothetischeAuswahl = [...activeCategories];
                 if (istAktiv) {
                     hypothetischeAuswahl = hypothetischeAuswahl.filter(k => k !== kat);
@@ -133,12 +133,12 @@
                     hypothetischeAuswahl.push(kat);
                 }
 
-                // Pr¸fen, ob mindestens eine Firma ALLE Kriterien der hypothetischen Auswahl erf¸llt
+                // Pr√ºfen, ob mindestens eine Firma ALLE Kriterien der hypothetischen Auswahl erf√ºllt
                 const hatErgebnisse = database.some(item => {
                     return hypothetischeAuswahl.every(k => item.kategorien.includes(k));
                 });
 
-                // Wenn es keine Ergebnisse g‰be und der Button nicht eh schon aktiv ist -> Ausgrauen
+                // Wenn es keine Ergebnisse g√§be und der Button nicht eh schon aktiv ist -> Ausgrauen
                 if (!hatErgebnisse && !istAktiv) {
                     btn.disabled = true;
                 }
@@ -173,13 +173,13 @@
             resultList.innerHTML = '';
             
             if (gefiltert.length === 0) {
-                resultList.innerHTML = "<p>Keine Eintr‰ge f¸r diese Kombination gefunden.</p>";
+                resultList.innerHTML = "<p>Keine Eintr√§ge f√ºr diese Kombination gefunden.</p>";
             } else {
                 gefiltert.forEach(item => {
                     const div = document.createElement('div');
                     div.className = 'item';
                     
-                    // Tags f¸r die Anzeige generieren
+                    // Tags f√ºr die Anzeige generieren
                     const tagsHtml = item.kategorien.map(k => `<span class='tag'>${k}</span>`).join('');
                     
                     div.innerHTML = `
