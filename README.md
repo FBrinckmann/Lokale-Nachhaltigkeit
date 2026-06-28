@@ -9,3 +9,6 @@ Python-Skript benötigt openpyxl --> pip install pandas openpyxl
 Ausführen unter Windows mit python convert.py
 
 # ##############################
+
+Open in Web using: 
+https://fbrinckmann.github.io/Lokale-Nachhaltigkeit/
