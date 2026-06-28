@@ -160,14 +160,6 @@ const firmaData = [
     ]
   },
   {
-    "titel": "Greenpeace Warenhaus",
-    "link": "https://warenhaus.greenpeace-magazin.de/",
-    "beschreibung": "",
-    "kategorien": [
-      "Shop / Versand"
-    ]
-  },
-  {
     "titel": "Greenpeace Energy",
     "link": "https://www.greenpeace-energy.de",
     "beschreibung": "",
