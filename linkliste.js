@@ -17,16 +17,6 @@ const firmaData = [
     ]
   },
   {
-    "titel": "Wandelbares Darmstadt",
-    "link": "http://www.wandelbaresdarmstadt.de/",
-    "beschreibung": "",
-    "kategorien": [
-      "News",
-      "Regional",
-      "Information/Bildung"
-    ]
-  },
-  {
     "titel": "Garbage Island",
     "link": "https://video.vice.com/en_us/video/garbage-island/563b9c912aab5c416bc75039",
     "beschreibung": "",
@@ -148,15 +138,6 @@ const firmaData = [
       "Verpackungsalternativen",
       "Unverpackt",
       "Nahrungsmittel regional / fairtrade"
-    ]
-  },
-  {
-    "titel": "Unverpacktladen Habitzheim",
-    "link": "https://emmas-erben.com/",
-    "beschreibung": "",
-    "kategorien": [
-      "Regional",
-      "Unverpackt"
     ]
   },
   {
@@ -285,6 +266,7 @@ const firmaData = [
     "link": "http://www.wandelbaresdarmstadt.de/",
     "beschreibung": "Angebote nachhaltigen Lebens und Konsum in Darmstadt",
     "kategorien": [
+      "News",
       "News regional",
       "Karte",
       "Regional"
@@ -350,19 +332,6 @@ const firmaData = [
     ]
   },
   {
-    "titel": "Recycling Kaufhaus Roßdorf",
-    "link": "https://www.facebook.com/recyclingkaufhausrossdorf/",
-    "beschreibung": "",
-    "kategorien": [
-      "Regional",
-      "Bekleidung",
-      "Elektro/Elektronik",
-      "Gebrauchte Waren",
-      "Möbel",
-      "Cafe"
-    ]
-  },
-  {
     "titel": "Bücherzelle des BHZ",
     "link": "https://www.bhz-rossdorf.de/aktuelles",
     "beschreibung": "",
@@ -381,6 +350,12 @@ const firmaData = [
       "Nahrungsmittel regional / fairtrade",
       "Bücher"
     ]
+  },
+  {
+    "titel": "Weltladen Dieburg",
+    "link": "https://www.weltladen-dieburg.de",
+    "beschreibung": "",
+    "kategorien": []
   },
   {
     "titel": "FairG'nügt",
