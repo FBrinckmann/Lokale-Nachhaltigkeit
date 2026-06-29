@@ -11,4 +11,4 @@ Ausführen unter Windows mit python convert.py
 # ##############################
 
 Open in Web using: 
-https://fbrinckmann.github.io/Lokale-Nachhaltigkeit/
+https://fbrinckmann.github.io/Lokale-Nachhaltigkeit/ (https://fbrinckmann.github.io/Lokale-Nachhaltigkeit/)
