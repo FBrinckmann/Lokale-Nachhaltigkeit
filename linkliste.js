@@ -9,25 +9,18 @@ const firmaData = [
     ]
   },
   {
-    "titel": "Zero Waste Map",
-    "link": "https://zerowastemap.org/",
-    "beschreibung": "",
-    "kategorien": [
-      "Karte"
-    ]
-  },
-  {
     "titel": "Garbage Island",
-    "link": "https://video.vice.com/en_us/video/garbage-island/563b9c912aab5c416bc75039",
-    "beschreibung": "",
+    "link": "https://youtu.be/DBUAVE7cMfg?si=lxzoATR_E3gFki2S",
+    "beschreibung": "An Ocean Full of Plastic (Full Documentary)",
     "kategorien": [
-      "Film"
+      "Film",
+      "NGO (Influencer)"
     ]
   },
   {
     "titel": "Flaschen-Gläser-Dosen",
     "link": "https://www.flaschen-glaeser-und-dosen.de/",
-    "beschreibung": "",
+    "beschreibung": "Mehrweg-Verpackungsalternativen für das Unverpackt-Einkaufen",
     "kategorien": [
       "Verpackungsalternativen"
     ]
@@ -35,7 +28,7 @@ const firmaData = [
   {
     "titel": "GläserundFlaschen",
     "link": "https://www.glaeserundflaschen.de/",
-    "beschreibung": "",
+    "beschreibung": "Mehrweg-Verpackungsalternativen für das Unverpackt-Einkaufen",
     "kategorien": [
       "Verpackungsalternativen"
     ]
@@ -43,33 +36,25 @@ const firmaData = [
   {
     "titel": "Weck Shop",
     "link": "http://www.shop-weck.de/",
-    "beschreibung": "",
+    "beschreibung": "Mehrweg-Verpackungsalternativen für das Unverpackt-Einkaufen",
     "kategorien": [
       "Verpackungsalternativen"
     ]
   },
   {
-    "titel": "Füll Mal",
-    "link": "https://fuellmal.de/",
-    "beschreibung": "",
-    "kategorien": [
-      "Regional",
-      "Unverpackt"
-    ]
-  },
-  {
     "titel": "Refill Deutschland",
     "link": "https://refill-deutschland.de/",
-    "beschreibung": "",
+    "beschreibung": "Refill-Stationen werden auf der “Karte von morgen” verzeichnet.",
     "kategorien": [
-      "Unverpackt",
+      "Regional",
+      "Unverpackte Produkte",
       "Reisen"
     ]
   },
   {
     "titel": "GLS Bank",
     "link": "https://www.gls.de",
-    "beschreibung": "",
+    "beschreibung": "Sozial-ökologische Bank in Deutschland",
     "kategorien": [
       "Bank",
       "Geldanlage"
@@ -84,7 +69,7 @@ const firmaData = [
   {
     "titel": "Foodwatch",
     "link": "https://www.foodwatch.org",
-    "beschreibung": "",
+    "beschreibung": "Verbraucherschutzorganisation",
     "kategorien": [
       "Ernährung",
       "NGO (Influencer)"
@@ -93,7 +78,7 @@ const firmaData = [
   {
     "titel": "Slowfood",
     "link": "https://www.slowfood.de/",
-    "beschreibung": "",
+    "beschreibung": "Weltweite Gegenbewegung zum Fast Food, die sich für ein sozial und ökologisch verantwortungsvolles Lebensmittelsystem einsetzt",
     "kategorien": [
       "Ernährung",
       "NGO (Influencer)"
@@ -102,15 +87,15 @@ const firmaData = [
   {
     "titel": "Slowfood Convivium Odenwald",
     "link": "https://www.slowfood.de/slow_food_vor_ort/odenwald",
-    "beschreibung": "",
+    "beschreibung": "Lokale Organisation von Slowfood in Südhessen",
     "kategorien": [
       "Karte"
     ]
   },
   {
-    "titel": "Sowfood Unterstützer",
+    "titel": "Slowfood Unterstützer",
     "link": "https://www.slowfood.de/unterstuetzer/gastronomen_hotels/",
-    "beschreibung": "",
+    "beschreibung": "Karte zu Hotels und Restaurants von SlowFood Unterstützern",
     "kategorien": [
       "Karte",
       "Regional",
@@ -121,22 +106,24 @@ const firmaData = [
   {
     "titel": "Oberfeld",
     "link": "https://www.landwirtschaft-oberfeld.de/hofladen-cafe.html",
-    "beschreibung": "",
+    "beschreibung": "Biolebensmittel am Hofgut, Bäckerei und Cafe/Bistro",
     "kategorien": [
       "Regional",
-      "Unverpackt",
+      "Unverpackte Produkte",
       "Nahrungsmittel regional / fairtrade",
-      "Cafe"
+      "Cafe / Bistro",
+      "Nahrungsmittelselbstanbau",
+      "Recycling"
     ]
   },
   {
     "titel": "Unverpacktladen Darmstadt",
     "link": "https://www.unverpacktdarmstadt.com/",
-    "beschreibung": "",
+    "beschreibung": "Unverpacktle Lebensmittel und andere Produkte",
     "kategorien": [
       "Regional",
       "Verpackungsalternativen",
-      "Unverpackt",
+      "Unverpackte Produkte",
       "Nahrungsmittel regional / fairtrade"
     ]
   },
@@ -154,32 +141,23 @@ const firmaData = [
   {
     "titel": "Greenpeace",
     "link": "https://www.greenpeace.de/",
-    "beschreibung": "",
+    "beschreibung": "Non-Profit-Organisation für Umwelt-, Natur- und Klimaschutz",
     "kategorien": [
       "NGO (Influencer)"
     ]
   },
   {
     "titel": "Greenpeace Energy",
-    "link": "https://www.greenpeace-energy.de",
-    "beschreibung": "",
+    "link": "https://green-planet-energy.de/",
+    "beschreibung": "Grüner Ernergieanbeiter",
     "kategorien": [
       "Energieanbieter"
     ]
   },
   {
-    "titel": "Reuse revolution map",
-    "link": "https://reuse-revolution-map.greenpeace.de",
-    "beschreibung": "",
-    "kategorien": [
-      "Karte",
-      "Unverpackt"
-    ]
-  },
-  {
     "titel": "BUND",
     "link": "https://bund-umstadt.de/",
-    "beschreibung": "",
+    "beschreibung": "Ortsverband Groß-Umstadt",
     "kategorien": [
       "Regional",
       "NGO (Influencer)",
@@ -207,7 +185,7 @@ const firmaData = [
   {
     "titel": "Freundeskreis Eberstädter Streuobstwiesen",
     "link": "http://streuobstwiesen-eberstadt.de/",
-    "beschreibung": "",
+    "beschreibung": "Freundeskreis Eberstädter Streuobstwiesen e.V.",
     "kategorien": [
       "Regional",
       "Streuobst"
@@ -216,10 +194,11 @@ const firmaData = [
   {
     "titel": "Jugendhof Bessunger Forst",
     "link": "https://jugendhof.org",
-    "beschreibung": "",
+    "beschreibung": "Inklusiver Ort für Abenteuer, Kreativität und Gemeinschaft im Bessunger Forst",
     "kategorien": [
       "Regional",
-      "Reisen"
+      "Reisen",
+      "Recycling"
     ]
   },
   {
@@ -239,9 +218,10 @@ const firmaData = [
   {
     "titel": "Fairphone",
     "link": "https://www.fairphone.com/de/",
-    "beschreibung": "Faires Smartphone",
+    "beschreibung": "Faires Smartphone und Kopfhörer",
     "kategorien": [
-      "Elektro/Elektronik"
+      "Elektro/Elektronik",
+      "Recycling"
     ]
   },
   {
@@ -300,19 +280,8 @@ const firmaData = [
     ]
   },
   {
-    "titel": "Reformhaus Roßdorf",
-    "link": "https://www.reformhaus.de/in-ihrer-naehe/",
-    "beschreibung": "",
-    "kategorien": [
-      "Regional",
-      "Unverpackt",
-      "Ernährung",
-      "Nahrungsmittel regional / fairtrade"
-    ]
-  },
-  {
     "titel": "Recycling Kaufhaus Roßdorf",
-    "link": "https://www.recycling-kaufhaus-rossdorf.de/",
+    "link": "https://bhz-rossdorf.de/recyclingkaufhaus",
     "beschreibung": "",
     "kategorien": [
       "Regional",
@@ -320,13 +289,14 @@ const firmaData = [
       "Elektro/Elektronik",
       "Gebrauchte Waren",
       "Möbel",
-      "Cafe"
+      "Cafe / Bistro",
+      "Drogerie / Kosmetik"
     ]
   },
   {
     "titel": "Bücherzelle des BHZ",
-    "link": "https://www.bhz-rossdorf.de/aktuelles",
-    "beschreibung": "",
+    "link": "https://www.bhz-rossdorf.de/aktuelles?page_n223=3",
+    "beschreibung": "Bücherzelle des BHZ Roßdorf zum Tauschen von Büchern",
     "kategorien": [
       "Regional",
       "Bücher"
