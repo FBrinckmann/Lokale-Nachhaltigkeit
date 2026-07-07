@@ -576,5 +576,45 @@ const firmaData = [
       "Nahrungsmittel regional / fairtrade",
       "Streuobst"
     ]
+  },
+  {
+    "titel": "Green Web Foundation",
+    "link": "https://www.thegreenwebfoundation.org/",
+    "beschreibung": "Testet Webseite auf \"grüne\" Hostinganbieter",
+    "kategorien": [
+      "Information/Bildung",
+      "Internet / Digitalisierung"
+    ]
+  },
+  {
+    "titel": "Energy Charts",
+    "link": "https://www.energy-charts.info",
+    "beschreibung": "Aktuelle Informationen zu Stomerzeugung und Emissionen",
+    "kategorien": [
+      "News",
+      "Strom (Energie)",
+      "Information/Bildung"
+    ]
+  },
+  {
+    "titel": "Electricity Maps",
+    "link": "https://app.electricitymaps.com/map",
+    "beschreibung": "Aktuelle Informationen zu Stomerzeugung und Emissionen",
+    "kategorien": [
+      "News",
+      "Karte",
+      "Strom (Energie)",
+      "Information/Bildung"
+    ]
+  },
+  {
+    "titel": "Ausflüge in Darmstadt-Dieburg",
+    "link": "https://www.darmstadt-dieburg-entdecken.de",
+    "beschreibung": "Aktivitäten, Veranstaltungen und Angebote im Raum in Darmstadt-Dieburg",
+    "kategorien": [
+      "News regional",
+      "Regional",
+      "Reisen"
+    ]
   }
 ];
