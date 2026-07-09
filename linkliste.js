@@ -22,7 +22,8 @@ const firmaData = [
     "link": "https://www.flaschen-glaeser-und-dosen.de/",
     "beschreibung": "Mehrweg-Verpackungsalternativen für das Unverpackt-Einkaufen",
     "kategorien": [
-      "Verpackungsalternativen"
+      "Verpackungsalternativen",
+      "Küchen/ Haushalltsartikel"
     ]
   },
   {
@@ -30,7 +31,8 @@ const firmaData = [
     "link": "https://www.glaeserundflaschen.de/",
     "beschreibung": "Mehrweg-Verpackungsalternativen für das Unverpackt-Einkaufen",
     "kategorien": [
-      "Verpackungsalternativen"
+      "Verpackungsalternativen",
+      "Küchen/ Haushalltsartikel"
     ]
   },
   {
@@ -38,7 +40,8 @@ const firmaData = [
     "link": "http://www.shop-weck.de/",
     "beschreibung": "Mehrweg-Verpackungsalternativen für das Unverpackt-Einkaufen",
     "kategorien": [
-      "Verpackungsalternativen"
+      "Verpackungsalternativen",
+      "Küchen/ Haushalltsartikel"
     ]
   },
   {
@@ -110,10 +113,10 @@ const firmaData = [
     "kategorien": [
       "Regional",
       "Unverpackte Produkte",
-      "Nahrungsmittel regional / fairtrade",
+      "Nahrungsmittel regional / Fairtrade",
       "Cafe / Bistro",
       "Nahrungsmittelselbstanbau",
-      "Recycling"
+      "Recycling / Wiederverwendung"
     ]
   },
   {
@@ -124,7 +127,8 @@ const firmaData = [
       "Regional",
       "Verpackungsalternativen",
       "Unverpackte Produkte",
-      "Nahrungsmittel regional / fairtrade"
+      "Nahrungsmittel regional / Fairtrade",
+      "Küchen/ Haushalltsartikel"
     ]
   },
   {
@@ -198,14 +202,23 @@ const firmaData = [
     "kategorien": [
       "Regional",
       "Reisen",
-      "Recycling"
+      "Recycling / Wiederverwendung"
     ]
   },
   {
     "titel": "Waschbär",
     "link": "https://www.waschbaer.de/shop/",
     "beschreibung": "Umweltversand für Naturmode & Bioprodukte",
-    "kategorien": []
+    "kategorien": [
+      "Bekleidung",
+      "Bücher",
+      "Möbel",
+      "Drogerie / Kosmetik",
+      "Garten",
+      "Deko",
+      "Küchen/ Haushalltsartikel",
+      "Geschenkideen"
+    ]
   },
   {
     "titel": "Maas natur",
@@ -221,7 +234,7 @@ const firmaData = [
     "beschreibung": "Faires Smartphone und Kopfhörer",
     "kategorien": [
       "Elektro/Elektronik",
-      "Recycling"
+      "Recycling / Wiederverwendung"
     ]
   },
   {
@@ -305,19 +318,31 @@ const firmaData = [
   {
     "titel": "Weltladen Darmstadt",
     "link": "http://www.weltladen-darmstadt.de/",
-    "beschreibung": "",
+    "beschreibung": "Kaffee, Tee und Schokolade, Schmuck, schicke Textilien, Stadtprodukte und schöne Geschenkideen",
     "kategorien": [
       "Regional",
       "Bekleidung",
-      "Nahrungsmittel regional / fairtrade",
-      "Bücher"
+      "Nahrungsmittel regional / Fairtrade",
+      "Bücher",
+      "Drogerie / Kosmetik",
+      "Ausstattung",
+      "Deko",
+      "Küchen/ Haushalltsartikel",
+      "Geschenkideen"
     ]
   },
   {
     "titel": "Weltladen Dieburg",
     "link": "https://www.weltladen-dieburg.de",
     "beschreibung": "",
-    "kategorien": []
+    "kategorien": [
+      "Bekleidung",
+      "Drogerie / Kosmetik",
+      "Ausstattung",
+      "Deko",
+      "Küchen/ Haushalltsartikel",
+      "Geschenkideen"
+    ]
   },
   {
     "titel": "FairG'nügt",
@@ -360,7 +385,7 @@ const firmaData = [
     "beschreibung": "",
     "kategorien": [
       "Regional",
-      "Nahrungsmittel regional / fairtrade"
+      "Nahrungsmittel regional / Fairtrade"
     ]
   },
   {
@@ -378,7 +403,7 @@ const firmaData = [
     "beschreibung": "",
     "kategorien": [
       "Regional",
-      "Nahrungsmittel regional / fairtrade"
+      "Nahrungsmittel regional / Fairtrade"
     ]
   },
   {
@@ -387,54 +412,44 @@ const firmaData = [
     "beschreibung": "",
     "kategorien": [
       "Regional",
-      "Nahrungsmittel regional / fairtrade",
+      "Nahrungsmittel regional / Fairtrade",
       "Nahrungsmittelselbstanbau"
     ]
   },
   {
     "titel": "Ackerhelden",
-    "link": "https://www.ackerhelden.de/mietgarten/darmstadt/",
+    "link": "https://ackerhelden.de/",
     "beschreibung": "",
     "kategorien": [
       "Regional",
-      "Nahrungsmittel regional / fairtrade",
+      "Nahrungsmittel regional / Fairtrade",
       "Nahrungsmittelselbstanbau"
-    ]
-  },
-  {
-    "titel": "Plastikarmes Leben",
-    "link": "https://www.besser-leben-ohne-plastik.de/",
-    "beschreibung": "",
-    "kategorien": [
-      "News",
-      "Verpackungsalternativen",
-      "Drogerie / Kosmetik",
-      "Information/Bildung"
     ]
   },
   {
     "titel": "Küste gegen Plastik",
     "link": "https://www.kueste-gegen-plastik.de",
-    "beschreibung": "",
+    "beschreibung": "Sammelaktionen zur Küstenreinigung",
     "kategorien": [
       "News",
-      "Verpackungsalternativen"
+      "Verpackungsalternativen",
+      "Reisen"
     ]
   },
   {
     "titel": "Handy Sammelaktion Zoo Frankfurt",
-    "link": "https://www.zoo-frankfurt.de/helfen/handy-sammelaktion/",
-    "beschreibung": "",
+    "link": "https://www.zoo-frankfurt.de/de/unterstuetzen/handy-sammelaktion",
+    "beschreibung": "Das Handysammelfass vor Ort und die Sammelbox für Zuhause.",
     "kategorien": [
       "Regional",
       "Elektro/Elektronik",
-      "Recycling"
+      "Recycling / Wiederverwendung"
     ]
   },
   {
     "titel": "Ökologischer Fussabdruck",
     "link": "https://www.fussabdruck.de/",
-    "beschreibung": "",
+    "beschreibung": "Teste deinen ökologischen Fußabdruck!",
     "kategorien": [
       "Information/Bildung"
     ]
@@ -442,10 +457,10 @@ const firmaData = [
   {
     "titel": "Cradle to Cradle Prinzip",
     "link": "https://c2c.ngo/",
-    "beschreibung": "",
+    "beschreibung": "Unter dem Dach der Cradle to Cradle Electronics Initiative bringen Unternehmen, Wissenschaft und Zivilgesellschaft Elektronik nach Cradle to Cradle in die Praxis",
     "kategorien": [
       "News",
-      "Recycling",
+      "Recycling / Wiederverwendung",
       "Information/Bildung"
     ]
   },
@@ -461,7 +476,7 @@ const firmaData = [
   {
     "titel": "Karte von Morgen",
     "link": "https://kartevonmorgen.org/#/?center=49.856,8.755&zoom=15.00",
-    "beschreibung": "",
+    "beschreibung": "Zukunftsfähigen Unternehmen und Wandelinitiativen auf einer Karte",
     "kategorien": [
       "Karte",
       "Regional"
@@ -504,11 +519,13 @@ const firmaData = [
   },
   {
     "titel": "Tinke-Shop",
-    "link": "https://tinke-shop.de",
+    "link": "https://www.tinke-shop.de",
     "beschreibung": "Handgemachte, nachhaltige Produkte aus Roßdorf",
     "kategorien": [
       "Regional",
-      "Nahrungsmittel regional / fairtrade"
+      "Nahrungsmittel regional / Fairtrade",
+      "Deko",
+      "Geschenkideen"
     ]
   },
   {
@@ -539,31 +556,13 @@ const firmaData = [
     ]
   },
   {
-    "titel": "Lebenswerter Odenwald Heiligkreuzsteinach e.V.",
-    "link": "https://www.lebenswerter-odenwald.de/",
-    "beschreibung": "Informationen Wildbienen, Naturschutz",
-    "kategorien": [
-      "News regional",
-      "Regional",
-      "Information/Bildung"
-    ]
-  },
-  {
-    "titel": "Odenwälder Direktvermarkter",
-    "link": "https://www.odenwaelder-direktvermarkter.de/",
-    "beschreibung": "Regionale Produkte - Verein",
-    "kategorien": [
-      "News regional",
-      "Regional"
-    ]
-  },
-  {
     "titel": "Hawos",
     "link": "https://hawos.de",
     "beschreibung": "Getreidemühlen, Flockenquetschen",
     "kategorien": [
       "Regional",
-      "Ernährung"
+      "Ernährung",
+      "Küchen/ Haushalltsartikel"
     ]
   },
   {
@@ -573,7 +572,7 @@ const firmaData = [
     "kategorien": [
       "Karte",
       "Regional",
-      "Nahrungsmittel regional / fairtrade",
+      "Nahrungsmittel regional / Fairtrade",
       "Streuobst"
     ]
   },
@@ -608,6 +607,15 @@ const firmaData = [
     ]
   },
   {
+    "titel": "Whyopencomputing",
+    "link": "https://whyopencomputing.ch/de/5-laptops-why",
+    "beschreibung": "Reparierbare Laptops",
+    "kategorien": [
+      "Elektro/Elektronik",
+      "Internet / Digitalisierung"
+    ]
+  },
+  {
     "titel": "Ausflüge in Darmstadt-Dieburg",
     "link": "https://www.darmstadt-dieburg-entdecken.de",
     "beschreibung": "Aktivitäten, Veranstaltungen und Angebote im Raum in Darmstadt-Dieburg",
@@ -615,6 +623,15 @@ const firmaData = [
       "News regional",
       "Regional",
       "Reisen"
+    ]
+  },
+  {
+    "titel": "Booklooker.de",
+    "link": "https://www.booklooker.de/",
+    "beschreibung": "Marktplatz für (gebrauchte) Bücher, Hörbücher, Filme, Musik und Spiele",
+    "kategorien": [
+      "Bücher",
+      "Filme / Musik / Hörbücher"
     ]
   }
 ];
