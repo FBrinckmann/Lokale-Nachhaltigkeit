@@ -5,7 +5,8 @@ const firmaData = [
     "beschreibung": "",
     "kategorien": [
       "News",
-      "Regional"
+      "Regional (Roßdorf/Darmstadt)",
+      "Initiative"
     ]
   },
   {
@@ -13,8 +14,8 @@ const firmaData = [
     "link": "https://youtu.be/DBUAVE7cMfg?si=lxzoATR_E3gFki2S",
     "beschreibung": "An Ocean Full of Plastic (Full Documentary)",
     "kategorien": [
-      "Film",
-      "NGO (Influencer)"
+      "Film ansehen",
+      "Information/Bildung"
     ]
   },
   {
@@ -23,6 +24,7 @@ const firmaData = [
     "beschreibung": "Mehrweg-Verpackungsalternativen für das Unverpackt-Einkaufen",
     "kategorien": [
       "Verpackungsalternativen",
+      "Shop / Versand",
       "Küchen/ Haushalltsartikel"
     ]
   },
@@ -32,6 +34,7 @@ const firmaData = [
     "beschreibung": "Mehrweg-Verpackungsalternativen für das Unverpackt-Einkaufen",
     "kategorien": [
       "Verpackungsalternativen",
+      "Shop / Versand",
       "Küchen/ Haushalltsartikel"
     ]
   },
@@ -41,6 +44,7 @@ const firmaData = [
     "beschreibung": "Mehrweg-Verpackungsalternativen für das Unverpackt-Einkaufen",
     "kategorien": [
       "Verpackungsalternativen",
+      "Shop / Versand",
       "Küchen/ Haushalltsartikel"
     ]
   },
@@ -49,7 +53,7 @@ const firmaData = [
     "link": "https://refill-deutschland.de/",
     "beschreibung": "Refill-Stationen werden auf der “Karte von morgen” verzeichnet.",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Unverpackte Produkte",
       "Reisen"
     ]
@@ -101,7 +105,7 @@ const firmaData = [
     "beschreibung": "Karte zu Hotels und Restaurants von SlowFood Unterstützern",
     "kategorien": [
       "Karte",
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Reisen",
       "Restaurant / Hotel"
     ]
@@ -111,9 +115,10 @@ const firmaData = [
     "link": "https://www.landwirtschaft-oberfeld.de/hofladen-cafe.html",
     "beschreibung": "Biolebensmittel am Hofgut, Bäckerei und Cafe/Bistro",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Unverpackte Produkte",
       "Nahrungsmittel regional / Fairtrade",
+      "Shop / Versand",
       "Cafe / Bistro",
       "Nahrungsmittelselbstanbau",
       "Recycling / Wiederverwendung"
@@ -124,10 +129,11 @@ const firmaData = [
     "link": "https://www.unverpacktdarmstadt.com/",
     "beschreibung": "Unverpacktle Lebensmittel und andere Produkte",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Verpackungsalternativen",
       "Unverpackte Produkte",
       "Nahrungsmittel regional / Fairtrade",
+      "Shop / Versand",
       "Küchen/ Haushalltsartikel"
     ]
   },
@@ -163,7 +169,7 @@ const firmaData = [
     "link": "https://bund-umstadt.de/",
     "beschreibung": "Ortsverband Groß-Umstadt",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "NGO (Influencer)",
       "Streuobst"
     ]
@@ -173,7 +179,7 @@ const firmaData = [
     "link": "http://odenwaelder-apfel.de/",
     "beschreibung": "",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Streuobst"
     ]
   },
@@ -182,7 +188,7 @@ const firmaData = [
     "link": "https://www.regev-rossdorf.de",
     "beschreibung": "Energiewende in Roßdorf umsetzen!",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Strom (Energie)"
     ]
   },
@@ -191,7 +197,7 @@ const firmaData = [
     "link": "http://streuobstwiesen-eberstadt.de/",
     "beschreibung": "Freundeskreis Eberstädter Streuobstwiesen e.V.",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Streuobst"
     ]
   },
@@ -200,7 +206,7 @@ const firmaData = [
     "link": "https://jugendhof.org",
     "beschreibung": "Inklusiver Ort für Abenteuer, Kreativität und Gemeinschaft im Bessunger Forst",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Reisen",
       "Recycling / Wiederverwendung"
     ]
@@ -211,6 +217,7 @@ const firmaData = [
     "beschreibung": "Umweltversand für Naturmode & Bioprodukte",
     "kategorien": [
       "Bekleidung",
+      "Shop / Versand",
       "Bücher",
       "Möbel",
       "Drogerie / Kosmetik",
@@ -225,7 +232,8 @@ const firmaData = [
     "link": "https://maas-natur.de/",
     "beschreibung": "Naturmode für die ganze Familie",
     "kategorien": [
-      "Bekleidung"
+      "Bekleidung",
+      "Shop / Versand"
     ]
   },
   {
@@ -233,6 +241,7 @@ const firmaData = [
     "link": "https://www.fairphone.com/de/",
     "beschreibung": "Faires Smartphone und Kopfhörer",
     "kategorien": [
+      "Shop / Versand",
       "Elektro/Elektronik",
       "Recycling / Wiederverwendung"
     ]
@@ -254,32 +263,37 @@ const firmaData = [
       "News",
       "News regional",
       "Karte",
-      "Regional"
+      "Regional (Roßdorf/Darmstadt)"
     ]
   },
   {
     "titel": "Oxfam",
     "link": "https://www.oxfam.de/",
-    "beschreibung": "",
+    "beschreibung": "Oxfam ist ein internationaler Verbund verschiedener Hilfs- und Entwicklungsorganisationen.",
     "kategorien": [
-      "NGO (Influencer)"
+      "NGO (Influencer)",
+      "Shop / Versand"
     ]
   },
   {
     "titel": "Oxfam Shop Darmstadt",
     "link": "https://shops.oxfam.de/shops/darmstadt",
-    "beschreibung": "",
+    "beschreibung": "Shops von Oxfam in Darmstadt",
     "kategorien": [
-      "Regional",
-      "Gebrauchte Waren"
+      "Regional (Roßdorf/Darmstadt)",
+      "Shop / Versand",
+      "Gebrauchte Waren",
+      "Küchen/ Haushalltsartikel",
+      "Geschenkideen"
     ]
   },
   {
     "titel": "Oxfam Bücher Shop",
     "link": "https://shops.oxfam.de/shops/darmstadt-buch",
-    "beschreibung": "",
+    "beschreibung": "Bücherladen von Oxfam in Darmstadt",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
+      "Shop / Versand",
       "Bücher"
     ]
   },
@@ -288,7 +302,8 @@ const firmaData = [
     "link": "https://www.böhm-natur.de",
     "beschreibung": "",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
+      "Shop / Versand",
       "Möbel"
     ]
   },
@@ -297,8 +312,9 @@ const firmaData = [
     "link": "https://bhz-rossdorf.de/recyclingkaufhaus",
     "beschreibung": "",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Bekleidung",
+      "Shop / Versand",
       "Elektro/Elektronik",
       "Gebrauchte Waren",
       "Möbel",
@@ -311,7 +327,7 @@ const firmaData = [
     "link": "https://www.bhz-rossdorf.de/aktuelles?page_n223=3",
     "beschreibung": "Bücherzelle des BHZ Roßdorf zum Tauschen von Büchern",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Bücher"
     ]
   },
@@ -320,9 +336,10 @@ const firmaData = [
     "link": "http://www.weltladen-darmstadt.de/",
     "beschreibung": "Kaffee, Tee und Schokolade, Schmuck, schicke Textilien, Stadtprodukte und schöne Geschenkideen",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Bekleidung",
       "Nahrungsmittel regional / Fairtrade",
+      "Shop / Versand",
       "Bücher",
       "Drogerie / Kosmetik",
       "Ausstattung",
@@ -334,9 +351,10 @@ const firmaData = [
   {
     "titel": "Weltladen Dieburg",
     "link": "https://www.weltladen-dieburg.de",
-    "beschreibung": "",
+    "beschreibung": "Ein Streifzug über die Märkte Afrikas, Asiens und Lateinamerikas!",
     "kategorien": [
       "Bekleidung",
+      "Shop / Versand",
       "Drogerie / Kosmetik",
       "Ausstattung",
       "Deko",
@@ -345,26 +363,18 @@ const firmaData = [
     ]
   },
   {
-    "titel": "FairG'nügt",
-    "link": "https://www.fair-handel.net/aktuelles/fairgn%C3%BCgt/",
-    "beschreibung": "Messe zum Fairen Handel in Darmstadt",
-    "kategorien": [
-      "Regional",
-      "Veranstaltung / Messe"
-    ]
-  },
-  {
     "titel": "Shiftphone",
     "link": "https://www.shiftphones.com",
-    "beschreibung": "Nachhaltige Smartphones",
+    "beschreibung": "Nachhaltige Smartphones und andere Elektronikgeräte wie Tablets, Monitore und Tastaturen",
     "kategorien": [
+      "Shop / Versand",
       "Elektro/Elektronik"
     ]
   },
   {
     "titel": "Saisonkalender für Lebensmittel",
     "link": "https://www.regional-saisonal.de/saisonkalender",
-    "beschreibung": "",
+    "beschreibung": "Saisonkalender zur Verwendung von Lebensmitteln",
     "kategorien": [
       "Ernährung"
     ]
@@ -372,7 +382,7 @@ const firmaData = [
   {
     "titel": "Ökoinstitut",
     "link": "https://www.oeko.de/",
-    "beschreibung": "",
+    "beschreibung": "Das Öko-Institut ist eine der europaweit führenden, unabhängigen Forschungs- und Beratungseinrichtungen für eine nachhaltige Zukunft.",
     "kategorien": [
       "News",
       "NGO (Influencer)",
@@ -382,38 +392,30 @@ const firmaData = [
   {
     "titel": "Eichhof Ober-Ramstadt",
     "link": "https://der-eichhof.de/",
-    "beschreibung": "",
+    "beschreibung": "Nachhaltige Landwirtschaft in Ober-Ramstadt",
     "kategorien": [
-      "Regional",
-      "Nahrungsmittel regional / Fairtrade"
+      "Regional (Roßdorf/Darmstadt)",
+      "Nahrungsmittel regional / Fairtrade",
+      "Shop / Versand"
     ]
   },
   {
     "titel": "Hofgut Habitzheim",
     "link": "https://www.hofgut-habitzheim.de",
-    "beschreibung": "",
+    "beschreibung": "Veranstaltungsort im Hofgut",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Restaurant / Hotel"
     ]
   },
   {
     "titel": "Bio-Gemüsekiste",
     "link": "https://www.diegemuesekiste.de/",
-    "beschreibung": "",
+    "beschreibung": "Mit der Gemüsekiste bieten wir eine abwechslungsreiche und bequeme Möglichkeit, biologisch angebautes Gemüse, Obst und vieles mehr teilweise direkt vom Erzeuger zu beziehen",
     "kategorien": [
-      "Regional",
-      "Nahrungsmittel regional / Fairtrade"
-    ]
-  },
-  {
-    "titel": "Lindenhof - Solidarische Landwirtschaft",
-    "link": "http://www.natuerlich-lindenhof.de/",
-    "beschreibung": "",
-    "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Nahrungsmittel regional / Fairtrade",
-      "Nahrungsmittelselbstanbau"
+      "Shop / Versand"
     ]
   },
   {
@@ -421,9 +423,20 @@ const firmaData = [
     "link": "https://ackerhelden.de/",
     "beschreibung": "",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Nahrungsmittel regional / Fairtrade",
       "Nahrungsmittelselbstanbau"
+    ]
+  },
+  {
+    "titel": "Plastikarmes Leben",
+    "link": "https://www.besser-leben-ohne-plastik.de/",
+    "beschreibung": "Blog zum Thema plastikarmes Leben mit Tips für den Alltag",
+    "kategorien": [
+      "News",
+      "Verpackungsalternativen",
+      "Drogerie / Kosmetik",
+      "Information/Bildung"
     ]
   },
   {
@@ -441,7 +454,7 @@ const firmaData = [
     "link": "https://www.zoo-frankfurt.de/de/unterstuetzen/handy-sammelaktion",
     "beschreibung": "Das Handysammelfass vor Ort und die Sammelbox für Zuhause.",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Elektro/Elektronik",
       "Recycling / Wiederverwendung"
     ]
@@ -467,9 +480,10 @@ const firmaData = [
   {
     "titel": "Fleischatlas",
     "link": "https://www.boell.de/de/fleischatlas",
-    "beschreibung": "",
+    "beschreibung": "Der Fleischatlas liefert in 19 Kapiteln und 51 Infografiken Daten und Fakten über Tiere als Nahrungsmittel.Der Fleischatlas liefert in 19 Kapiteln und 51 Infografiken Daten und Fakten über Tiere als Nahrungsmittel.",
     "kategorien": [
       "Ernährung",
+      "NGO (Influencer)",
       "Information/Bildung"
     ]
   },
@@ -479,7 +493,7 @@ const firmaData = [
     "beschreibung": "Zukunftsfähigen Unternehmen und Wandelinitiativen auf einer Karte",
     "kategorien": [
       "Karte",
-      "Regional"
+      "Regional (Roßdorf/Darmstadt)"
     ]
   },
   {
@@ -487,6 +501,7 @@ const firmaData = [
     "link": "https://www.rebuy.de/",
     "beschreibung": "Gebrauchte Elektronik",
     "kategorien": [
+      "Shop / Versand",
       "Elektro/Elektronik",
       "Gebrauchte Waren"
     ]
@@ -496,6 +511,7 @@ const firmaData = [
     "link": "https://www.refurbed.de",
     "beschreibung": "Gebrauchte Elektronik",
     "kategorien": [
+      "Shop / Versand",
       "Elektro/Elektronik",
       "Gebrauchte Waren"
     ]
@@ -505,6 +521,7 @@ const firmaData = [
     "link": "https://www.apple.com/de/shop/refurbished",
     "beschreibung": "Gebrauchte Elektronik",
     "kategorien": [
+      "Shop / Versand",
       "Elektro/Elektronik",
       "Gebrauchte Waren"
     ]
@@ -514,6 +531,7 @@ const firmaData = [
     "link": "https://frame.work/de/de/laptop",
     "beschreibung": "Nachhaltiger, reparierbarer Laptop",
     "kategorien": [
+      "Shop / Versand",
       "Elektro/Elektronik"
     ]
   },
@@ -522,8 +540,9 @@ const firmaData = [
     "link": "https://www.tinke-shop.de",
     "beschreibung": "Handgemachte, nachhaltige Produkte aus Roßdorf",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Nahrungsmittel regional / Fairtrade",
+      "Shop / Versand",
       "Deko",
       "Geschenkideen"
     ]
@@ -551,7 +570,8 @@ const firmaData = [
     "link": "https://zwei-bags.com",
     "beschreibung": "Taschen, Rucksäcke, Geldbeutel",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
+      "Shop / Versand",
       "Ausstattung"
     ]
   },
@@ -560,8 +580,9 @@ const firmaData = [
     "link": "https://hawos.de",
     "beschreibung": "Getreidemühlen, Flockenquetschen",
     "kategorien": [
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Ernährung",
+      "Shop / Versand",
       "Küchen/ Haushalltsartikel"
     ]
   },
@@ -571,7 +592,7 @@ const firmaData = [
     "beschreibung": "Karte \"essbarer\" Landschaften",
     "kategorien": [
       "Karte",
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Nahrungsmittel regional / Fairtrade",
       "Streuobst"
     ]
@@ -621,7 +642,7 @@ const firmaData = [
     "beschreibung": "Aktivitäten, Veranstaltungen und Angebote im Raum in Darmstadt-Dieburg",
     "kategorien": [
       "News regional",
-      "Regional",
+      "Regional (Roßdorf/Darmstadt)",
       "Reisen"
     ]
   },
@@ -630,8 +651,68 @@ const firmaData = [
     "link": "https://www.booklooker.de/",
     "beschreibung": "Marktplatz für (gebrauchte) Bücher, Hörbücher, Filme, Musik und Spiele",
     "kategorien": [
+      "Strom (Energie)",
       "Bücher",
-      "Filme / Musik / Hörbücher"
+      "Filme / Musik / Hörbücher kaufen"
+    ]
+  },
+  {
+    "titel": "Cleanup Roßdorf",
+    "link": "https://cleanup-dossdorf.de",
+    "beschreibung": "Initiative um Müllsammeln in Roßdorf und Gunderhausen",
+    "kategorien": [
+      "Regional (Roßdorf/Darmstadt)",
+      "Strom (Energie)",
+      "Recycling / Wiederverwendung",
+      "Initiative"
+    ]
+  },
+  {
+    "titel": "Mein Regenwald",
+    "link": "https://mein-regenwald.de",
+    "beschreibung": "Rette Dein eigenes Stück Regenwald",
+    "kategorien": [
+      "Reisen",
+      "NGO (Influencer)",
+      "Klimakompensation"
+    ]
+  },
+  {
+    "titel": "Lebensmittelklarheit",
+    "link": "https://www.lebensmittelklarheit.de/",
+    "beschreibung": "Informationen zur Lebensmittelkennzeichung und Produktmeldungen",
+    "kategorien": [
+      "News",
+      "Ernährung",
+      "NGO (Influencer)"
+    ]
+  },
+  {
+    "titel": "Solarversand",
+    "link": "https://www.solarversand.de/",
+    "beschreibung": "Solar betriebene Lampen, Pumpen, usw für den Haushalt",
+    "kategorien": [
+      "Elektro/Elektronik",
+      "Internet / Digitalisierung"
+    ]
+  },
+  {
+    "titel": "Fair IT",
+    "link": "https://fairemaus.de/",
+    "beschreibung": "Kaufe eine Faire Maus oder baue sie selber!",
+    "kategorien": [
+      "Shop / Versand",
+      "Elektro/Elektronik",
+      "Internet / Digitalisierung"
+    ]
+  },
+  {
+    "titel": "Plastic Planet",
+    "link": "https://www.youtube.com/watch?v=0pMZ_-vDtHk",
+    "beschreibung": "Plastik ist aus dem heutigem Leben nicht mehr wegzudenken. Doch welche Risiken gehen von diesem Material aus? Regisseur Werner Boote lenkt den Fokus auf eine Welt, in der Plastik allgegenwärtig ist und damit problematisch für die Umwelt, Mensch und Tier.",
+    "kategorien": [
+      "Film ansehen",
+      "Information/Bildung"
     ]
   }
 ];
