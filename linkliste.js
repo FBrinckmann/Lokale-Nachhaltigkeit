@@ -25,7 +25,7 @@ const firmaData = [
     "kategorien": [
       "Verpackungsalternativen",
       "Shop / Versand",
-      "Küchen/ Haushalltsartikel"
+      "Küchen/ Haushaltsartikel"
     ]
   },
   {
@@ -35,7 +35,7 @@ const firmaData = [
     "kategorien": [
       "Verpackungsalternativen",
       "Shop / Versand",
-      "Küchen/ Haushalltsartikel"
+      "Küchen/ Haushaltsartikel"
     ]
   },
   {
@@ -45,7 +45,7 @@ const firmaData = [
     "kategorien": [
       "Verpackungsalternativen",
       "Shop / Versand",
-      "Küchen/ Haushalltsartikel"
+      "Küchen/ Haushaltsartikel"
     ]
   },
   {
@@ -134,7 +134,7 @@ const firmaData = [
       "Unverpackte Produkte",
       "Nahrungsmittel regional / Fairtrade",
       "Shop / Versand",
-      "Küchen/ Haushalltsartikel"
+      "Küchen/ Haushaltsartikel"
     ]
   },
   {
@@ -223,7 +223,7 @@ const firmaData = [
       "Drogerie / Kosmetik",
       "Garten",
       "Deko",
-      "Küchen/ Haushalltsartikel",
+      "Küchen/ Haushaltsartikel",
       "Geschenkideen"
     ]
   },
@@ -283,7 +283,7 @@ const firmaData = [
       "Regional (Roßdorf/Darmstadt)",
       "Shop / Versand",
       "Gebrauchte Waren",
-      "Küchen/ Haushalltsartikel",
+      "Küchen/ Haushaltsartikel",
       "Geschenkideen"
     ]
   },
@@ -344,7 +344,7 @@ const firmaData = [
       "Drogerie / Kosmetik",
       "Ausstattung",
       "Deko",
-      "Küchen/ Haushalltsartikel",
+      "Küchen/ Haushaltsartikel",
       "Geschenkideen"
     ]
   },
@@ -358,7 +358,18 @@ const firmaData = [
       "Drogerie / Kosmetik",
       "Ausstattung",
       "Deko",
-      "Küchen/ Haushalltsartikel",
+      "Küchen/ Haushaltsartikel",
+      "Geschenkideen"
+    ]
+  },
+  {
+    "titel": "FairG'nügt",
+    "link": "https://www.fairgnuegt.de/",
+    "beschreibung": "Messe zum Fairen Handel in Darmstadt",
+    "kategorien": [
+      "Regional (Roßdorf/Darmstadt)",
+      "Bekleidung",
+      "Veranstaltung / Messe",
       "Geschenkideen"
     ]
   },
@@ -583,7 +594,7 @@ const firmaData = [
       "Regional (Roßdorf/Darmstadt)",
       "Ernährung",
       "Shop / Versand",
-      "Küchen/ Haushalltsartikel"
+      "Küchen/ Haushaltsartikel"
     ]
   },
   {
@@ -651,7 +662,7 @@ const firmaData = [
     "link": "https://www.booklooker.de/",
     "beschreibung": "Marktplatz für (gebrauchte) Bücher, Hörbücher, Filme, Musik und Spiele",
     "kategorien": [
-      "Strom (Energie)",
+      "Shop / Versand",
       "Bücher",
       "Filme / Musik / Hörbücher kaufen"
     ]
