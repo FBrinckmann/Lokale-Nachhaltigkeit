@@ -2,7 +2,7 @@ const firmaData = [
   {
     "titel": "Verein Nachhaltig-Zusammen-Leben.jetzt e.V.",
     "link": "https://www.nachhaltig-zusammen-leben.jetzt/",
-    "beschreibung": "",
+    "beschreibung": "Lokaler Verein in Roßdorf zur Förderung von nachhaltigem Leben, mit weiterem Fokus auf Nachbarschaftlichkeit.",
     "kategorien": [
       "News",
       "Regional (Roßdorf/Darmstadt)",
@@ -177,7 +177,7 @@ const firmaData = [
   {
     "titel": "Odenwald Apfel e.v.",
     "link": "http://odenwaelder-apfel.de/",
-    "beschreibung": "",
+    "beschreibung": "Verein zur Obstbaumpflege und Obstverwendung im Odenwald. Bietet auch jährlich Obstbaumschnittkurse an.",
     "kategorien": [
       "Regional (Roßdorf/Darmstadt)",
       "Streuobst"
@@ -300,7 +300,7 @@ const firmaData = [
   {
     "titel": "Böhm Naturholzmöbel",
     "link": "https://www.böhm-natur.de",
-    "beschreibung": "",
+    "beschreibung": "Ehemaliger Einrichtungsladen mit ökologischem Schwerpunkt aus Darmstadt. Bietet Beratungen an.",
     "kategorien": [
       "Regional (Roßdorf/Darmstadt)",
       "Shop / Versand",
@@ -310,7 +310,7 @@ const firmaData = [
   {
     "titel": "Recycling Kaufhaus Roßdorf",
     "link": "https://bhz-rossdorf.de/recyclingkaufhaus",
-    "beschreibung": "",
+    "beschreibung": "Nachhaltiges, integratives Secondhandkaufhaus",
     "kategorien": [
       "Regional (Roßdorf/Darmstadt)",
       "Bekleidung",
@@ -432,7 +432,7 @@ const firmaData = [
   {
     "titel": "Ackerhelden",
     "link": "https://ackerhelden.de/",
-    "beschreibung": "",
+    "beschreibung": "Urban Gardening Konzepte",
     "kategorien": [
       "Regional (Roßdorf/Darmstadt)",
       "Nahrungsmittel regional / Fairtrade",
@@ -618,6 +618,16 @@ const firmaData = [
     ]
   },
   {
+    "titel": "Darmstädter Pflanzenkohle",
+    "link": "www.pflanzenkohle-darmstadt.de",
+    "beschreibung": "Organischer Bodenverbesserer vom EAD Darmstadt",
+    "kategorien": [
+      "Regional (Roßdorf/Darmstadt)",
+      "Nahrungsmittelselbstanbau",
+      "Garten"
+    ]
+  },
+  {
     "titel": "Energy Charts",
     "link": "https://www.energy-charts.info",
     "beschreibung": "Aktuelle Informationen zu Stomerzeugung und Emissionen",
@@ -673,7 +683,6 @@ const firmaData = [
     "beschreibung": "Initiative um Müllsammeln in Roßdorf und Gunderhausen",
     "kategorien": [
       "Regional (Roßdorf/Darmstadt)",
-      "Strom (Energie)",
       "Recycling / Wiederverwendung",
       "Initiative"
     ]
